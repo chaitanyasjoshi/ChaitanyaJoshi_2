@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #000;
+}
+/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+
+body {
+  font-size: 1.4rem;
+  text-rendering: optimizeLegibility;
+}
+/* sets the base font size for the document; turns on kerning pairs and ligatures */
+
+body,
+ul,
+ol,
+dl {
+  margin: 0;
+}
+article,
+aside,
+audio,
+footer,
+header,
+nav,
+section,
+video {
+  display: block;
+}
+
+/* ensures that older browsers will display HTML5 elements correctly */
+
+h1 {
+  font-size: 1.4rem;
+}
+/* begins to set up font sizes relative to base rem – h1 has been used as an example */
+
+textarea {
+  resize: vertical;
+}
+/* changes textarea resizing from "both" (UA default) to vertical only */
+
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 0.5rem;
+}
+/* causes tables to actually look like tables */
+
+img {
+  border: none;
+  max-width: 100%;
+}
+/* removes outlines from linked images (for older browsers and IE), sets up images for responsive design layout */
+
+input[type='submit']::-moz-focus-inner,
+input[type='button']::-moz-focus-inner {
+  border: 0px;
+}
+/* removes the inner border effect from focused buttons for form elements in Firefox */
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+}
+input[type='submit'] {
+  -webkit-appearance: none;
+}
+/* removes the OS X appearance from HTML5 search inputs and submit buttons when viewed in Safari */
+
+input:required:after {
+  color: #f00;
+  content: ' *';
+}
+/* sets up required form fields with the conventional following red asterix */
+input[type='email']:invalid {
+  background: #f00;
+}
+/* causes a visual alert in browsers that do client-side checking of HTML5 email field – this may already be the default in some browsers. */
+
+.right {
+  float: right;
+  margin-left: 2rem;
+  clear: right;
+}
+.left {
+  float: left;
+  margin-right: 2rem;
+  clear: left;
+}
+/* allows a quick shortcut for floating elements left and right while avoiding the “float quirk” problem */
+
+sub,
+sup {
+  line-height: 0;
+}
+/* sets superscript and subscript text so that it doesn't throw off leading for elements in which they are included */
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  background: linear-gradient(to right, rgb(7, 7, 222), rgb(0, 232, 253));
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  z-index: 10;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1530px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  width: 215px;
+  padding: 2rem;
+}
+
+.nav-items {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-list {
+  margin: 0px;
+  display: flex;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0 2rem 0 2rem;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/bg-home.png');
+  background-size: cover;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+.container-home {
+  width: 100%;
+  height: 100vh;
+  max-width: 1530px;
+  margin: auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  right: 52px;
+  bottom: -40px;
+}
+
+.hero img {
+  width: 35vw;
+  border-top-left-radius: 55%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  pointer-events: none;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+.title {
+  margin-top: 70px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.intro h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.desc {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.button {
+  display: flex;
+  margin-top: 1.5rem;
+  width: max-content;
+  border: none;
+  border-radius: 50px;
+  padding: 0.9rem 2.3rem;
+  background-color: #00dafc;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.button svg {
+  margin-left: 0.5rem;
+  height: 20px;
+  font-weight: 500;
+}
+
+.intro-home {
+  margin-top: 100px;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('../images/bg-intro.png');
+  background-size: cover;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+.container-intro {
+  height: 100vh;
+  max-width: 1530px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.container-intro img {
+  width: 680px;
+  height: 72vh;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 55%;
+}
+
+.details {
+  margin-left: 7rem;
+  width: 100%;
+  height: 100%;
+  max-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-title {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.details h2 {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  line-height: 4rem;
+  font-weight: 400;
+  color: #b1a8ef;
+}
+
+.details-desc {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
