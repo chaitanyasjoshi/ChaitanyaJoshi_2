@@ -226,7 +226,7 @@ img {
   padding: 0.9rem 2.3rem;
   background-color: #00dafc;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -290,4 +290,48 @@ img {
 .details-desc {
   font-size: 1.3rem;
   font-weight: 200;
+}
+
+.services {
+  min-height: 100vh;
+  background-image: url('../images/shapes-icons.png');
+  background-size: cover;
+  background-position-x: 105%;
+  background-repeat: no-repeat;
+}
+
+.container-common {
+  max-width: 1530px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.services-intro {
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-intro p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #4632da;
+}
+
+.services-intro h2 {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  font-weight: 400;
+  color: #a8abb5;
+}
+
+.btn-violet {
+  background-color: #4632da;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
