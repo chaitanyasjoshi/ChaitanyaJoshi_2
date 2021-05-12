@@ -333,5 +333,47 @@ img {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
+  padding: 3rem 0;
+}
+
+.service-card {
+  padding: 4rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 20%;
+  background-color: white;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.4);
+}
+
+.service-card img {
+  width: 90px;
+}
+
+.card-title {
+  padding: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #3d4459;
+}
+
+.card-desc {
+  font-size: 1.3rem;
+  font-weight: 200;
+  padding-bottom: 0.5rem;
+}
+
+.service-card a {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #4632da;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.service-card svg {
+  width: 20px;
+  margin-left: 0.5rem;
 }
