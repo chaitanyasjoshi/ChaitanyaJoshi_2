@@ -377,3 +377,61 @@ img {
   width: 20px;
   margin-left: 0.5rem;
 }
+
+.team {
+  min-height: 100vh;
+  background-image: url('../images/bg-team.png');
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
+
+.team-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.team-card {
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.4);
+}
+
+.team-card img {
+  width: 800px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.team-card h5 {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #00dafc;
+}
+
+.team-card p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.8rem;
+}
+
+.team-info {
+  margin: auto;
+  padding: 2.2rem 3rem;
+}
+
+.team-info p {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.team-info h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #5240dc;
+  padding-bottom: 2rem;
+}
