@@ -492,3 +492,86 @@ img {
   font-size: 1.1rem;
   font-weight: 300;
 }
+
+.clients {
+  text-align: center;
+}
+
+.clients h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #5240dc;
+  margin-bottom: 2rem;
+}
+
+.clients-title {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.clients-desc {
+  font-size: 1.3rem;
+  font-weight: 200;
+  max-width: 580px;
+  margin: auto;
+}
+
+.client-logo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6rem 0;
+}
+
+.cta {
+  min-height: 100vh;
+  background-image: url('../images/bg-cta.png');
+  background-position-y: 110%;
+  background-position-x: 50%;
+  background-size: 130%;
+  background-repeat: no-repeat;
+}
+
+.container-cta {
+  width: 100%;
+  height: 100vh;
+  max-width: 1530px;
+  margin: auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.cta-home {
+  position: absolute;
+  position: absolute;
+  right: 0px;
+  bottom: 52px;
+}
+
+.cta-home img {
+  width: 35vw;
+  border-top-left-radius: 55%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  pointer-events: none;
+}
+
+.btn-white {
+  background-color: white;
+  color: #00dafc;
+}
+
+.intro-cta {
+  max-width: 35vw;
+}
+
+.intro-cta h2 {
+  margin-top: 22rem;
+}
+
+.intro-cta p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
