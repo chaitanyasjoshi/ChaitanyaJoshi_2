@@ -23,16 +23,6 @@ ol,
 dl {
   margin: 0;
 }
-article,
-aside,
-audio,
-footer,
-header,
-nav,
-section,
-video {
-  display: block;
-}
 
 h1 {
   font-size: 1.4rem;
@@ -50,6 +40,22 @@ ul {
 img {
   display: block;
   width: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 200ms;
 }
 
 .nav {
@@ -164,9 +170,8 @@ img {
 .home {
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../images/bg-home.png');
+  background-image: linear-gradient(to right, rgb(7, 7, 222), rgb(0, 232, 253));
   background-size: cover;
-  background-position-x: 50%;
   background-repeat: no-repeat;
 }
 
@@ -532,10 +537,7 @@ img {
 
 .cta {
   min-height: 100vh;
-  background-image: url('../images/bg-cta.png');
-  background-position-y: 110%;
-  background-position-x: 50%;
-  background-size: 130%;
+  background-image: linear-gradient(to right, rgb(7, 7, 222), rgb(0, 232, 253));
   background-repeat: no-repeat;
 }
 
@@ -645,4 +647,46 @@ img {
 .copyright p {
   font-size: 1.1rem;
   font-weight: 200;
+}
+
+.modal-content {
+  padding: 3rem 4rem;
+  border-radius: 20px !important;
+  width: 700px !important;
+}
+
+.modal-content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #00dafc;
+  margin-bottom: 0;
+}
+
+.modal-content h2 {
+  font-size: 2.5rem;
+  color: #3d4459;
+}
+
+.modal-content input {
+  width: 520px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  height: 50px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.modal-content button {
+  margin-left: auto;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
+}
+
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }

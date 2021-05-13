@@ -66,7 +66,7 @@
       </div>
     </nav>
 
-    <div class="chat">
+    <div class="chat" data-bs-toggle="modal" data-bs-target="#chatmodal">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="#fff"
@@ -80,6 +80,48 @@
           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
         />
       </svg>
+    </div>
+
+    <div
+      class="modal fade"
+      id="chatmodal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="chatModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <p>Let's Have A Chat</p>
+          <h2>Learn How We Helped 100 Top Brands Gain Success.</h2>
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Phone" />
+          <input type="text" placeholder="Email" />
+          <button class="button">
+            <span>Send</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
 
     <div id="home" class="home">
@@ -121,9 +163,9 @@
           <img src="images/intro-home.png" alt="" />
         </div>
         <div class="details">
-          <p class="details-title">The Sky's The Limit</p>
+          <p class="details-title fadeInUp">The Sky's The Limit</p>
           <h2>We Create Unique Campaigns That Help Your Business Grow</h2>
-          <p class="details-desc">
+          <p class="details-desc fadeInUp">
             Lorem ipsum dolor sit orot amet, conse ctetur adip scing elit. Proin
             rutrum euismod dolor ultricies aliq luam ekolor
           </p>
@@ -149,7 +191,7 @@
 
     <div id="services" class="container-common">
       <div class="services-intro">
-        <div>
+        <div class="fadeInUp">
           <p>We Solve Real Problems</p>
           <h2>What Can We Do For You?</h2>
         </div>
@@ -325,8 +367,8 @@
             </div>
           </div>
           <div class="team-info">
-            <p>Our Work Inspires Smiles</p>
-            <h2>The Faces Behind Our Success</h2>
+            <p class="fadeInUp">Our Work Inspires Smiles</p>
+            <h2 class="fadeInUp">The Faces Behind Our Success</h2>
             <button class="button">
               <span>Meet The Team</span>
               <span>
@@ -351,25 +393,25 @@
     <div class="testimonial">
       <div class="container-common team-center">
         <div class="testimonial-info">
-          <p>We Love Them</p>
-          <h2>What Our Clients Have To Say</h2>
+          <p class="fadeInUp">We Love Them</p>
+          <h2 class="fadeInUp">What Our Clients Have To Say</h2>
         </div>
         <div class="testimonial-profile">
           <img src="images/testimonial.png" alt="" />
         </div>
         <div class="testimonial-details">
-          <p class="testimonial-desc">
+          <p class="testimonial-desc fadeInUp">
             "Lorem ipsum, dolor sit amet, contur ading elit, sed do euismod
             tempor incididunt ut labore et dolore magna aliqua."
           </p>
-          <p class="testimonial-name">Amanda Parks</p>
-          <p class="testimonial-org">CYBERO</p>
+          <p class="testimonial-name fadeInUp">Amanda Parks</p>
+          <p class="testimonial-org fadeInUp">CYBERO</p>
         </div>
       </div>
     </div>
 
     <div id="clients" class="container-common">
-      <div class="clients">
+      <div class="clients fadeInUp">
         <p class="clients-title">Meet Our Clients</p>
         <h2>They Believe In Us</h2>
         <p class="clients-desc">
