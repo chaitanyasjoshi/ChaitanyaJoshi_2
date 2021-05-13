@@ -26,24 +26,63 @@
         </div>
         <div class="nav-items">
           <ul id="nav-list" class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li class="dropdown">
-              <a href="#"
-                >Services<i class="fa fa-caret-down" aria-hidden="true"></i
-              ></a>
+              <a href="#services">
+                <span>Services</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
             </li>
-            <li><a href="#">Clients</a></li>
+            <li><a href="#clients">Clients</a></li>
 
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">209-337-5705</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li class="contactno">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  /></svg
+                ><span>209-337-5705</span></a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="home">
+    <div class="chat">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#fff"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+    </div>
+
+    <div id="home" class="home">
       <div class="container-home">
         <div class="hero">
           <img src="images/hero-home.png" alt="" />
@@ -76,7 +115,7 @@
       </div>
     </div>
 
-    <div class="intro-home">
+    <div id="about" class="intro-home">
       <div class="container-intro">
         <div>
           <img src="images/intro-home.png" alt="" />
@@ -108,7 +147,7 @@
       </div>
     </div>
 
-    <div class="container-common">
+    <div id="services" class="container-common">
       <div class="services-intro">
         <div>
           <p>We Solve Real Problems</p>
@@ -329,7 +368,7 @@
       </div>
     </div>
 
-    <div class="container-common">
+    <div id="clients" class="container-common">
       <div class="clients">
         <p class="clients-title">Meet Our Clients</p>
         <h2>They Believe In Us</h2>
@@ -347,7 +386,7 @@
       </div>
     </div>
 
-    <div class="cta">
+    <div id="contactus" class="cta">
       <div class="container-cta">
         <div class="cta-home">
           <img src="images/cta-home.png" alt="" />

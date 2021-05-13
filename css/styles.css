@@ -4,19 +4,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 html,
 body {
   min-height: 100%;
   background: #fff;
   color: #000;
 }
-/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 
 body {
   font-size: 1.4rem;
   text-rendering: optimizeLegibility;
 }
-/* sets the base font size for the document; turns on kerning pairs and ligatures */
 
 body,
 ul,
@@ -35,73 +34,14 @@ video {
   display: block;
 }
 
-/* ensures that older browsers will display HTML5 elements correctly */
-
 h1 {
   font-size: 1.4rem;
 }
-/* begins to set up font sizes relative to base rem – h1 has been used as an example */
-
-textarea {
-  resize: vertical;
-}
-/* changes textarea resizing from "both" (UA default) to vertical only */
-
-table {
-  border-collapse: collapse;
-}
-td {
-  padding: 0.5rem;
-}
-/* causes tables to actually look like tables */
 
 img {
   border: none;
   max-width: 100%;
 }
-/* removes outlines from linked images (for older browsers and IE), sets up images for responsive design layout */
-
-input[type='submit']::-moz-focus-inner,
-input[type='button']::-moz-focus-inner {
-  border: 0px;
-}
-/* removes the inner border effect from focused buttons for form elements in Firefox */
-
-input[type='search'] {
-  -webkit-appearance: textfield;
-}
-input[type='submit'] {
-  -webkit-appearance: none;
-}
-/* removes the OS X appearance from HTML5 search inputs and submit buttons when viewed in Safari */
-
-input:required:after {
-  color: #f00;
-  content: ' *';
-}
-/* sets up required form fields with the conventional following red asterix */
-input[type='email']:invalid {
-  background: #f00;
-}
-/* causes a visual alert in browsers that do client-side checking of HTML5 email field – this may already be the default in some browsers. */
-
-.right {
-  float: right;
-  margin-left: 2rem;
-  clear: right;
-}
-.left {
-  float: left;
-  margin-right: 2rem;
-  clear: left;
-}
-/* allows a quick shortcut for floating elements left and right while avoiding the “float quirk” problem */
-
-sub,
-sup {
-  line-height: 0;
-}
-/* sets superscript and subscript text so that it doesn't throw off leading for elements in which they are included */
 
 ul {
   list-style: none;
@@ -153,11 +93,75 @@ img {
   display: block;
   font-size: 1.1rem;
   font-weight: 500;
-  padding: 0 2rem 0 2rem;
+  margin: 0 2rem 0 2rem;
+}
+
+.nav-list a:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown svg {
+  width: 23px;
+  margin-left: 10px;
+}
+
+.contactno {
+  border-left: 1px solid white;
+}
+
+.contactno a {
+  display: flex;
+  align-items: center;
+}
+
+.contactno svg {
+  width: 23px;
+  margin-right: 10px;
+}
+
+.contactno span {
+  font-weight: 300;
+}
+
+.chat {
+  background-color: #4632da;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  bottom: 60px;
+  left: 60px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 7px 30px -10px rgb(70, 50, 218, 0.8);
+}
+
+.chat:hover {
+  background-color: #00dafc;
+  box-shadow: 0 7px 30px -10px rgb(0, 218, 252, 0.8);
+  transition: background-color 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.chat:hover svg {
+  color: #00dafc;
+  transition: color 200ms ease-in;
+}
+
+.chat svg {
+  width: 40px;
+  color: #4632da;
 }
 
 .home {
-  background-color: #000;
   min-height: 100vh;
   width: 100vw;
   background-image: url('../images/bg-home.png');
@@ -528,7 +532,6 @@ img {
 
 .cta {
   min-height: 100vh;
-  background-color: black;
   background-image: url('../images/bg-cta.png');
   background-position-y: 110%;
   background-position-x: 50%;
